@@ -1,6 +1,7 @@
 package com.skilldistillery.entities;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -8,6 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 public class Flight {
@@ -100,6 +104,13 @@ public class Flight {
 	private double totalDuration;
 
 	private String remarks;
+
+	@CreationTimestamp
+	@Column(name = "created", updatable = false)
+	private LocalDateTime created;
+
+	@UpdateTimestamp
+	private LocalDateTime updated;
 
 	public Flight() {
 	}
@@ -344,6 +355,22 @@ public class Flight {
 		this.remarks = remarks;
 	}
 
+	public LocalDateTime getCreated() {
+		return created;
+	}
+
+	public void setCreated(LocalDateTime created) {
+		this.created = created;
+	}
+
+	public LocalDateTime getUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(LocalDateTime updated) {
+		this.updated = updated;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -376,7 +403,7 @@ public class Flight {
 				+ technicallyAdvancedAircraft + ", crossCountry=" + crossCountry + ", night=" + night
 				+ ", actualInstrument=" + actualInstrument + ", simulatedInstrument=" + simulatedInstrument
 				+ ", simulatorTime=" + simulatorTime + ", totalDuration=" + totalDuration + ", remarks=" + remarks
-				+ "]";
+				+ ", created=" + created + ", updated=" + updated + "]";
 	}
 
 }
