@@ -1,0 +1,3 @@
+﻿id,aircraft_tail_number,aircraft_name,departure_date_time,arrival_date_time,flight_type,departing_airport,arriving_airport,departing_airport_name,arriving_airport_name,distance_flown,create,update
+1,N123CK,Cessna 172 SP,2022-01-15 07:00:00,2022-01-15 09:00:00,VFR,KDAB,KDAB,Daytona Beach International Airport,Daytona Beach International Airport,75,,
+2,N123CK,Cessna 172 SP,2022-01-22 09:00:01,2022-01-22 12:00:01,VFR,KDAB,KGNV,Daytona Beach International Airport,Gainesville Airport,98,,
