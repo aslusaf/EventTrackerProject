@@ -17,7 +17,7 @@ These instructions are meant to provide only the basic information required to b
 
 NOTE: {ID} in the routes should be replaced with the appropriate identifier for the desired operation
 
-``` e.g. http://3.136.215.243:8082/api/flights/{ID}  -->  http://3.136.215.243:8082/api/flights/3 ```
+``` e.g. /api/flights/{ID}  -->  /api/flights/3 ```
 
 
 <br>
@@ -29,7 +29,7 @@ METHOD: GET
 ```
 
 ```html
-ROUTE: http://3.136.215.243:8082/api/flights
+ROUTE: /api/flights
 ```
 
 ```text
@@ -45,7 +45,7 @@ METHOD: GET
 ```
 
 ```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+ROUTE: /api/flights/{ID}
 ```
 
 ```text
@@ -61,7 +61,7 @@ METHOD: POST
 ```
 
 ```html
-ROUTE: http://3.136.215.243:8082/api/flights
+ROUTE: /api/flights
 ```
 
 ```text
@@ -95,7 +95,7 @@ METHOD: PUT
 ```
 
 ```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+ROUTE: /api/flights/{ID}
 ```
 
 ```text
@@ -127,7 +127,7 @@ METHOD: DELETE
 ```
 
 ```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+ROUTE: /api/flights/{ID}
 ```
 
 ```text
