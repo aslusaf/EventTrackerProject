@@ -13,8 +13,14 @@ The goal of this project was to build a quick and simple RESTful API for the bac
 -----
 
 ## Instructions:
-These instructions are meant to provide only the basic information required to be able to successfully interact with the API and assumes that the user is already proficient with Postman, or another similar tool. For more detailed instructions, please see the "Walkthrough" section below.
-<br><br>
+These instructions are meant to provide only the basic information required to be able to successfully interact with the API and assumes that the user is already proficient with Postman, or another similar tool. More detailed instructions in the for of an Application walkthrough will be provided at a later date.
+
+NOTE: {ID} in the routes should be replaced with the appropriate identifier for the desired operation
+
+``` e.g. http://3.136.215.243:8082/api/flights/{ID}  -->  http://3.136.215.243:8082/api/flights/3 ```
+
+
+<br>
 
 - Search all flights:
 
@@ -62,68 +68,8 @@ ROUTE: http://3.136.215.243:8082/api/flights
 BODY: raw | JSON
 ```
 
----
-
-- Update a flight:
-
 ```text
-METHOD: PUT
-```
-
-```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
-```
-
-```text
-BODY: raw | JSON
-```
-
-- Delete a flight:
-
-```text
-METHOD: DELETE
-```
-
-```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
-```
-
-```text
-BODY: N/A
-```
-
----
-
-## Walkthrough:
-
-1. Search all flights:
-
-```text
-METHOD: GET
-```
-
-```html
-ROUTE: http://3.136.215.243:8082/api/flights
-```
-
-```text
-BODY: N/A
-```
-
----
-
-2. Create a new flight:
-
-```text
-METHOD: POST
-```
-
-```html
-ROUTE: http://3.136.215.243:8082/api/flights
-```
-
-```text
-BODY: raw | JSON
+EXAMPLE BODY:
 ```
 
 ```json
@@ -142,23 +88,7 @@ BODY: raw | JSON
 
 ---
 
-3. Find a flight by its ID:
-
-```text
-METHOD: GET
-```
-
-```html
-ROUTE: http://3.136.215.243:8082/api/flights/{ID}
-```
-
-```text
-BODY: N/A
-```
-
----
-
-4. Update a flight:
+- Update a flight:
 
 ```text
 METHOD: PUT
@@ -170,6 +100,10 @@ ROUTE: http://3.136.215.243:8082/api/flights/{ID}
 
 ```text
 BODY: raw | JSON
+```
+
+```text
+EXAMPLE BODY:
 ```
 
 ```json
@@ -186,8 +120,19 @@ BODY: raw | JSON
 }
 ```
 
+- Delete a flight:
 
+```text
+METHOD: DELETE
+```
 
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
+
+```text
+BODY: N/A
+```
 
 -----
 
