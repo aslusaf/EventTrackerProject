@@ -193,7 +193,7 @@ BODY: raw | JSON
 
 ## Lessons Learned:
 This was a very simple project, so I didn't run into any issues. It did help to reinforce the concepts involved in building a RESTful API to the Level 2 standards as described in the <a href="https://restfulapi.net/richardson-maturity-model/" target="_blank">Richardson Maturity Model</a>:<br><br>
-<center><a href="https://martinfowler.com/articles/richardsonMaturityModel.html" target="_blank"><img src="images/richardsonmaturitymodel.png" alt="richardsonmaturitymodel" height="200" width="340"/></a></center>
+<div align="center"><a href="https://martinfowler.com/articles/richardsonMaturityModel.html" target="_blank"><img src="images/richardsonmaturitymodel.png" alt="richardsonmaturitymodel" height="200" width="340"/></a></div>
 
 
 -----
