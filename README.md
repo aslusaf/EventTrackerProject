@@ -8,7 +8,7 @@ The goal of this project was to build a quick and simple RESTful API for the bac
 2. The functionality is limited to only simple CRUD (Create, Read, Update, & Delete) operations.
 3. There is no frontend. All interactions with the API should be done using Postman:
 
-<a href="https://www.postman.com/" target="_blank"><img src="images/postman_logo.png" alt="postman_logo" height="90" width="290" align="center"/></a>
+<div align="center"><a href="https://www.postman.com/" target="_blank"><img src="images/postman_logo.png" alt="postman_logo" height="90" width="290"/></a></div>
 
 -----
 
