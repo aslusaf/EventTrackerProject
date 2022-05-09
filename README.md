@@ -38,9 +38,9 @@ BODY: N/A
 METHOD: GET
 ```
 
-<pre>
-ROUTE: http://3.136.215.243:8082/api/flights/<b style="color:green">ID</b>
-</pre>
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
 
 ```text
 BODY: N/A
@@ -70,9 +70,9 @@ BODY: raw | JSON
 METHOD: PUT
 ```
 
-<pre>
-ROUTE: http://3.136.215.243:8082/api/flights/<b style="color:green">ID</b>
-</pre>
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
 
 ```text
 BODY: raw | JSON
@@ -84,9 +84,9 @@ BODY: raw | JSON
 METHOD: DELETE
 ```
 
-<pre>
-ROUTE: http://3.136.215.243:8082/api/flights/<b style="color:green">ID</b>
-</pre>
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
 
 ```text
 BODY: N/A
@@ -148,9 +148,9 @@ BODY: raw | JSON
 METHOD: GET
 ```
 
-<pre>
-ROUTE: http://3.136.215.243:8082/api/flights/<b style="color:green">ID</b>
-</pre>
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
 
 ```text
 BODY: N/A
@@ -164,9 +164,9 @@ BODY: N/A
 METHOD: PUT
 ```
 
-<pre>
-ROUTE: http://3.136.215.243:8082/api/flights/<b style="color:green">ID</b>
-</pre>
+```html
+ROUTE: http://3.136.215.243:8082/api/flights/{ID}
+```
 
 ```text
 BODY: raw | JSON
