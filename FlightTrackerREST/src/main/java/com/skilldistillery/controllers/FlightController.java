@@ -71,6 +71,7 @@ public class FlightController {
 		Flight flight;
 		try {
 			flight = serv.updateFlight(id, update);
+			res.setStatus(202);
 			if (flight == null) {
 				res.setStatus(404);
 			}
