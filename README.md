@@ -8,23 +8,29 @@ The second part of this continuing project (See Version 1.0 at the bottom for Pa
 
 ## Instructions:
 
-- See all details for a flight:
+#### See all details for a flight:
 
 1. Click on the table entry to see the expanded view with all flight details.
 
-- Create a new flight:
+---
+
+#### Create a new flight:
 
 1. Fill out the form details and click the 'Submit button'.
 
 Note: Date, Aircraft Tail #, Departing Airport Identifier, and Arriving Airport Identifier fields are mandatory.
 
-- Update a flight:
+---
+
+#### Update a flight:
 
 1. Click on the table entry for the flight to update.
 2. Update the form fields as required.
 3. Click the 'Update Button' for the changes to take effect.
 
-- Delete a flight:
+---
+
+#### Delete a flight:
 
 1. Click on the table entry for the flight to delete.
 3. Click the 'Delete Button' for the changes to take effect.
