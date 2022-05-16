@@ -358,6 +358,7 @@ function buildTable(flights) {
 	});
 
 	let tfoot = document.createElement("tfoot");
+	tfoot.className = "table-dark";
 	tr = document.createElement('tr');
 	td = document.createElement('td');
 	td.colSpan = "9";
