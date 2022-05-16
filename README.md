@@ -1,4 +1,91 @@
-# Event Tracker Project
+# Event Tracker Project (Version 2.0)
+
+## Description:
+
+The second part of this continuing project (See Version 1.0 at the bottom for Part 1) was to build out a frontend for the RESTful API that was created in Part 1.
+
+-----
+
+## Instructions:
+
+- See all details for a flight:
+
+1. Click on the table entry to see the expanded view with all flight details.
+
+- Create a new flight:
+
+1. Fill out the form details and click the 'Submit button'.
+
+Note: Date, Aircraft Tail #, Departing Airport Identifier, and Arriving Airport Identifier fields are mandatory.
+
+- Update a flight:
+
+1. Click on the table entry for the flight to update.
+2. Update the form fields as required.
+3. Click the 'Update Button' for the changes to take effect.
+
+- Delete a flight:
+
+1. Click on the table entry for the flight to delete.
+3. Click the 'Delete Button' for the changes to take effect.
+
+-----
+
+## Lessons Learned:
+
+I learned a substantial amount about creating webpages dynamically using Javascript and AJAX requests.
+
+-----
+
+
+## Technologies Used:
+
+### Database {
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mysql.com/" target="_blank"><img src="images/mysql_logo.png" alt="mysql_logo" height="50" width="100" id="mysql"/></a>
+
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL Workbench:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mysql.com/products/workbench/" target="_blank"><img src="images/mysqlworkbench_logo.jpeg" alt="mysqlworkbench_logo" height="50" width="50" id="mysqlworkbench"/></a>
+
+
+### }
+
+### Backend Connectivity {
+
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.java.com/en/" target="_blank"><img src="images/java_logo.png" alt="java_logo" height="85" width="50" id="java_logo"/></a>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spring:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://spring.io/" target="_blank"><img src="images/spring_logo.svg" alt="spring_logo" height="50" width="100" id="spring_logo"/></a>
+
+### }
+
+### Frontend {
+
+#### Javascript
+
+#### HTML / CSS / Bootstrap
+
+### }
+
+
+### Testing {
+
+Google Chrome
+
+### }
+
+
+-----
+
+-----
+
+-----
+
+
+# Event Tracker Project (Version 1.0)
 
 ## Description:
 
