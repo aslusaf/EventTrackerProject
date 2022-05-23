@@ -1,3 +1,67 @@
+# Event Tracker Project (Version 3.0)
+
+## Description:
+
+The second part of this continuing project (See Version 1.0 at the bottom for Part 1) was to build out a frontend for the RESTful API that was created in Part 1.
+
+The third part of this continuing project (See Version 2.0 at the bottom for Part 2) was to build out a frontend using Angular.
+
+-----
+
+## Instructions:
+
+#### Create a new flight:
+
+1. Fill out the form details and click the 'Submit button'.
+
+---
+
+## Technologies Used:
+
+### Database {
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mysql.com/" target="_blank"><img src="images/mysql_logo.png" alt="mysql_logo" height="50" width="100" id="mysql"/></a>
+
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL Workbench:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mysql.com/products/workbench/" target="_blank"><img src="images/mysqlworkbench_logo.jpeg" alt="mysqlworkbench_logo" height="50" width="50" id="mysqlworkbench"/></a>
+
+
+### }
+
+### Backend Connectivity {
+
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.java.com/en/" target="_blank"><img src="images/java_logo.png" alt="java_logo" height="85" width="50" id="java_logo"/></a>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spring:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://spring.io/" target="_blank"><img src="images/spring_logo.svg" alt="spring_logo" height="50" width="100" id="spring_logo"/></a>
+
+### }
+
+### Frontend {
+
+#### Angular
+
+#### HTML / CSS / Bootstrap
+
+### }
+
+
+### Testing {
+
+Google Chrome
+
+### }
+
+
+-----
+
+-----
+
+-----
+
 # Event Tracker Project (Version 2.0)
 
 ## Description:
