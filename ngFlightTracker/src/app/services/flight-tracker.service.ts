@@ -10,80 +10,9 @@ import { getAttrsForDirectiveMatching } from '@angular/compiler/src/render3/view
   providedIn: 'root',
 })
 export class FlightTrackerService {
+  private url = environment.baseUrl + 'api/flights/';
 
-  private url = environment.baseUrl + 'api/flights';
-
-  newFlight: Flight = new Flight();
-
-  tableHeaderArr: string[] = [
-    'ID',
-    'Date',
-    'Aircraft Type',
-    'Aircraft Tail #',
-    'Aircraft Name',
-    'Departing Airport Identifier',
-    'Departing Airport Name',
-    'Arriving Airport Identifier',
-    'Arriving Airport Name',
-    'Miles Flown',
-    'Flight Type',
-    '# Day T/O',
-    '# Night T/O',
-    '# Day LDG',
-    '# Night LDG',
-    '# Instr. Appr.',
-    'SE',
-    'ME',
-    'PIC',
-    'SIC',
-    'Dual Recieved',
-    'Instr. / Exam.',
-    'TAA',
-    'XC',
-    'Night',
-    'Actual Instrument',
-    'Sim. Instrument',
-    'Simulator Time',
-    'Total',
-    'Remarks',
-  ];
-
-  fieldNamesArr: string[] = [
-    'flightDate',
-    'aircraftType',
-    'aircraftIdentifier',
-    'aircraftName',
-    'departingAirportIdentifier',
-    'departingAirportName',
-    'arrivingAirportIdentifier',
-    'arrivingAirportName',
-    'distanceFlown',
-    'flightType',
-    'dayTakeoffs',
-    'nightTakeoffs',
-    'dayLandings',
-    'nightLandings',
-    'instrumentApproaches',
-    'singleEngine',
-    'multiEngine',
-    'pilotInCommand',
-    'secondInCommand',
-    'dualReceived',
-    'instructorExaminerCheckpilot',
-    'technicallyAdvancedAircraft',
-    'crossCountry',
-    'night',
-    'actualInstrument',
-    'simulatedInstrument',
-    'simulatorTime',
-    'totalDuration',
-    'remarks',
-  ];
-
-  constructor(
-    private http: HttpClient,
-    ) {}
-
+  constructor(private http: HttpClient) {}
 
   index() {
     return this.http.get<Flight[]>(this.url).pipe(
@@ -110,7 +39,6 @@ export class FlightTrackerService {
   }
 
   update(updateFlight: Flight) {
-
     const httpOptions = {
       headers: {
         'Content-type': 'application/json',
@@ -124,5 +52,14 @@ export class FlightTrackerService {
           return throwError('TodoService: error creating Todo');
         })
       );
+  }
+
+  destroy(id: number) {
+    return this.http.delete<void>(this.url + id).pipe(
+      catchError((err: any) => {
+        console.log(err);
+        return throwError('TodoService: error retrieving todo list');
+      })
+    );
   }
 }

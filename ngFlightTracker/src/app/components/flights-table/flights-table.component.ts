@@ -17,7 +17,7 @@ export class FlightsTableComponent implements OnInit {
 
   totalMilesFlown: number = 0;
 
-  tableHeaderArr: string[] = this.flightTrackerService.tableHeaderArr;
+  // tableHeaderArr: string[] = this.flightTrackerService.tableHeaderArr;
 
   constructor(
     private flightTrackerService: FlightTrackerService,
@@ -45,7 +45,7 @@ export class FlightsTableComponent implements OnInit {
 
   editFlight(flight: Flight) {
 
-    this.flightTrackerService.newFlight = flight;
+    // this.flightTrackerService.newFlight = flight;
     this.reload();
     console.log(flight);
   }
