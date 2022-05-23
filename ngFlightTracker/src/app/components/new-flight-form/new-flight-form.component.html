@@ -1,0 +1,191 @@
+<div class="container-fluid">
+
+  <form class="form-control bg-light border-dark d-grid gap-3">
+
+    <div class="row">
+
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" [placeholder]="fieldNamesArr[0]" [id]="fieldNamesArr[0]" [name]="fieldNamesArr[0]" [(ngModel)]="newFlight[fieldNamesArr[0]]">
+        <label [for]="fieldNamesArr[0]">{{tableHeaderArr[1]}} <span class="text-success">(Required)</span></label>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[1]" [id]="fieldNamesArr[1]" [name]="fieldNamesArr[1]" [(ngModel)]="newFlight[fieldNamesArr[1]]">
+          <label [for]="fieldNamesArr[1]">{{tableHeaderArr[2]}}</label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[2]" [id]="fieldNamesArr[2]" [name]="fieldNamesArr[2]" [(ngModel)]="newFlight[fieldNamesArr[2]]">
+          <label [for]="fieldNamesArr[2]">{{tableHeaderArr[3]}} <span class="text-success">(Required)</span></label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[3]" [id]="fieldNamesArr[3]" [name]="fieldNamesArr[3]" [(ngModel)]="newFlight[fieldNamesArr[3]]">
+          <label [for]="fieldNamesArr[3]">{{tableHeaderArr[4]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[4]" [id]="fieldNamesArr[4]" [name]="fieldNamesArr[4]" [(ngModel)]="newFlight[fieldNamesArr[4]]">
+          <label [for]="fieldNamesArr[4]">{{tableHeaderArr[5]}} <span class="text-success">(Required)</span></label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[6]" [id]="fieldNamesArr[6]" [name]="fieldNamesArr[6]" [(ngModel)]="newFlight[fieldNamesArr[6]]">
+          <label [for]="fieldNamesArr[6]">{{tableHeaderArr[7]}} <span class="text-success">(Required)</span></label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[5]" [id]="fieldNamesArr[5]" [name]="fieldNamesArr[5]" [(ngModel)]="newFlight[fieldNamesArr[5]]">
+          <label [for]="fieldNamesArr[5]">{{tableHeaderArr[6]}}</label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[7]" [id]="fieldNamesArr[7]" [name]="fieldNamesArr[7]" [(ngModel)]="newFlight[fieldNamesArr[7]]">
+          <label [for]="fieldNamesArr[7]">{{tableHeaderArr[8]}}</label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" min="0.0" max="2147483647" [placeholder]="fieldNamesArr[8]"
+            [id]="fieldNamesArr[8]" [name]="fieldNamesArr[8]" [(ngModel)]="newFlight[fieldNamesArr[8]]">
+          <label [for]="fieldNamesArr[8]">{{tableHeaderArr[9]}}</label>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [placeholder]="fieldNamesArr[9]" [id]="fieldNamesArr[9]" [name]="fieldNamesArr[9]"  [(ngModel)]="newFlight[fieldNamesArr[9]]">
+          <label [for]="fieldNamesArr[9]">{{tableHeaderArr[10]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col" *ngFor="let fieldNumber of rowSixArr;">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" min="0" max="2147483647" [placeholder]="fieldNamesArr[fieldNumber]"
+            [id]="fieldNamesArr[fieldNumber]" [name]="fieldNamesArr[fieldNumber]"  [(ngModel)]="newFlight[fieldNamesArr[fieldNumber]]">
+          <label [for]="fieldNamesArr[fieldNumber]">{{tableHeaderArr[fieldNumber + 1]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col" *ngFor="let fieldNumber of rowSevenArr;">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" min="0.0" max="2147483647" step="0.1"
+            [placeholder]="fieldNamesArr[fieldNumber]" [id]="fieldNamesArr[fieldNumber]" [name]="fieldNamesArr[fieldNumber]"  [(ngModel)]="newFlight[fieldNamesArr[fieldNumber]]">
+          <label [for]="fieldNamesArr[fieldNumber]">{{tableHeaderArr[fieldNumber + 1]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col" *ngFor="let fieldNumber of rowEightArr;">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" min="0.0" max="2147483647" step="0.1"
+            [placeholder]="fieldNamesArr[fieldNumber]" [id]="fieldNamesArr[fieldNumber]" [name]="fieldNamesArr[fieldNumber]"  [(ngModel)]="newFlight[fieldNamesArr[fieldNumber]]">
+          <label [for]="fieldNamesArr[fieldNumber]">{{tableHeaderArr[fieldNumber + 1]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" min="0" max="2147483647" [placeholder]="fieldNamesArr[27]"
+            [id]="fieldNamesArr[27]" [name]="fieldNamesArr[27]"  [(ngModel)]="newFlight[fieldNamesArr[27]]">
+          <label [for]="fieldNamesArr[27]">{{tableHeaderArr[28]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-floating mb-3">
+          <textarea class="form-control" rows="5" [placeholder]="fieldNamesArr[28]" [id]="fieldNamesArr[28]" [name]="fieldNamesArr[28]"  [(ngModel)]="newFlight[fieldNamesArr[28]]"></textarea>
+          <label [for]="fieldNamesArr[28]">{{tableHeaderArr[29]}}</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <input class="btn btn-lg btn-secondary col-2 mx-auto" type="submit" id="submitButton" value="Submit" (click)="submitForm()">
+      <!-- <input class="btn btn-lg btn-secondary col-2 mx-auto" type="submit" id="submitButton" value="Back" (click)="submitForm()"> -->
+
+    </div>
+
+    <div class="row"></div>
+
+  </form>
+
+</div>

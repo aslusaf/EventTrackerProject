@@ -1,0 +1,53 @@
+<div class="overflow-auto">
+  <table
+    class="table table-striped table-light table-hover table-bordered border-dark align-middle text-center mx-auto">
+    <thead class="table-dark">
+      <tr>
+        <th *ngFor="let th of thArr">{{tableHeaderArr[th]}}</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <ng-container *ngFor="let flight of flights">
+      <tr (click)="editFlight(flight)">
+        <td>{{flight.id}}</td>
+        <td>{{flight.flightDate}}</td>
+        <td>{{flight.aircraftType}}</td>
+        <td>{{flight.aircraftIdentifier}}</td>
+        <td>{{flight.aircraftName}}</td>
+        <td>{{flight.departingAirportIdentifier}}</td>
+        <td>{{flight.departingAirportName}}</td>
+        <td>{{flight.arrivingAirportIdentifier}}</td>
+        <td>{{flight.arrivingAirportName}}</td>
+        <td>{{flight.distanceFlown}}</td>
+        <!-- <td>{{flight.flightType}}</td>
+        <td>{{flight.dayTakeoffs}}</td>
+        <td>{{flight.nightTakeoffs}}</td>
+        <td>{{flight.dayLandings}}</td>
+        <td>{{flight.nightLandings}}</td>
+        <td>{{flight.instrumentApproaches}}</td>
+        <td>{{flight.singleEngine}}</td>
+        <td>{{flight.multiEngine}}</td>
+        <td>{{flight.pilotInCommand}}</td>
+        <td>{{flight.secondInCommand}}</td>
+        <td>{{flight.dualReceived}}</td>
+        <td>{{flight.instructorExaminerCheckpilot}}</td>
+        <td>{{flight.technicallyAdvancedAircraft}}</td>
+        <td>{{flight.crossCountry}}</td>
+        <td>{{flight.night}}</td>
+        <td>{{flight.actualInstrument}}</td>
+        <td>{{flight.simulatedInstrument}}</td>
+        <td>{{flight.simulatorTime}}</td>
+        <td>{{flight.totalDuration}}</td> -->
+        <td>{{flight.remarks}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+    <tfoot class="table-dark">
+      <tr>
+        <td class="align-middle text-end" colspan="9">Total Miles Flown:</td>
+        <td>{{calculateTotalMiles()}}</td>
+        <td colspan="20"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

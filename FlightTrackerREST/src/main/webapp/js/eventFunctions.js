@@ -29,13 +29,13 @@ let objId;
 let isSingleRow = false;
 
 window.addEventListener('load', function(e) {
-	console.log('document loaded');
+//	console.log('document loaded');
 	init();
 });
 
 function init() {
 
-	console.log("in init()");
+//	console.log("in init()");
 	buildNavBar();
 	buildForm();
 	getFlights();
@@ -53,11 +53,11 @@ function buildNavBar() {
 
 	let homeIconAnchor = document.createElement("a");
 	homeIconAnchor.className = "navbar-brand";
-	homeIconAnchor.href = "/index.html";
+	homeIconAnchor.href = "./";
 
 	let homeIcon = document.createElement("img");
 	homeIcon.className = "d-inline-block align-text-top";
-	homeIcon.src = "/images/homeIcon.png";
+	homeIcon.src = "images/homeIcon.png";
 	homeIcon.width = "32";
 	homeIcon.height = "32";
 
@@ -85,7 +85,7 @@ function buildNavBar() {
 
 function buildForm() {
 
-	console.log("buildForm() loaded");
+//	console.log("buildForm() loaded");
 
 	let labelTextContentArr = tableHeaderArr;
 
@@ -126,8 +126,8 @@ function createFormHtml() {
 
 	colArr[1].className = 'col'
 
-	console.log(rowArr);
-	console.log(colArr);
+//	console.log(rowArr);
+//	console.log(colArr);
 
 
 	let rowColCountArr = [1, 3, 4, 2, 5, 6, 6, 1, 1];
@@ -155,9 +155,9 @@ function createFormHtml() {
 
 function appendFormTags(obj) {
 
-	console.log("obj tags");
-	console.log(obj);
-	console.log(((typeof obj !== 'undefined')));
+//	console.log("obj tags");
+//	console.log(obj);
+//	console.log(((typeof obj !== 'undefined')));
 
 	for (let i = 0; i < colArr.length; i++) {
 
@@ -206,7 +206,7 @@ function setInputAttributes(input, val, i) {
 		case (13):
 		case (14):
 			input.type = "number";
-			input.min = 0.0;
+			input.min = 0;
 			input.max = 2147483647;
 			break;
 		default:
@@ -225,7 +225,7 @@ function setInputAttributes(input, val, i) {
 
 function getFlights() {
 
-	console.log("getFlights() loaded");
+//	console.log("getFlights() loaded");
 
 	let xhr = new XMLHttpRequest();
 	xhr.open("GET", "api/flights");
@@ -233,10 +233,10 @@ function getFlights() {
 		if (xhr.readyState === 4) {
 			if (xhr.status === 200) {
 				let flights = JSON.parse(xhr.responseText);
-				console.log(flights);
+//				console.log(flights);
 				buildTable(flights);
 			} else {
-				console.log("Flights not Found");
+//				console.log("Flights not Found");
 				document.getElementById('flightsDiv').textContent = "Flights not Found";
 			}
 		}
@@ -258,7 +258,6 @@ function buildTable(flights) {
 	thead.className = 'table-dark';
 
 	let tr = document.createElement('tr');
-	//tr.className = 'table-primary';
 
 	thead.appendChild(tr);
 
@@ -351,8 +350,8 @@ function buildTable(flights) {
 
 		};
 
-		console.log('totalDistanceFlown');
-		console.log(totalDistanceFlown);
+//		console.log('totalDistanceFlown');
+//		console.log(totalDistanceFlown);
 
 		tbody.appendChild(tr);
 	});
@@ -386,7 +385,7 @@ function addRemoveSubmitUpdateDelete(i) {
 
 		case (1):
 
-			console.log("in case 1");
+//			console.log("in case 1");
 
 			while (rowArr[9].firstChild) {
 				rowArr[9].removeChild(rowArr[9].firstChild);
@@ -411,8 +410,8 @@ function addRemoveSubmitUpdateDelete(i) {
 			buttonGroup.appendChild(deleteButton);
 			rowArr[9].appendChild(buttonGroup);
 
-			console.log(updateButton);
-			console.log(deleteButton);
+//			console.log(updateButton);
+//			console.log(deleteButton);
 
 			break;
 
@@ -439,7 +438,7 @@ function addRemoveSubmitUpdateDelete(i) {
 
 function createEventListeners() {
 
-	console.log("createEventListeners() loaded");
+//	console.log("createEventListeners() loaded");
 
 	submitButton.addEventListener('click', function(e) {
 
@@ -471,11 +470,11 @@ function createEventListeners() {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200 || xhr.status === 201) {
 					let flight = JSON.parse(xhr.responseText);
-					console.log(flight);
+//					console.log(flight);
 					e.target.parentElement.parentElement.reset();
 					getFlights();
 				} else {
-					console.log("POST request failed");
+//					console.log("POST request failed");
 				}
 			}
 		};
@@ -518,7 +517,7 @@ function createEventListeners() {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200 || xhr.status === 202) {
 					let flight = JSON.parse(xhr.responseText);
-					console.log(flight);
+//					console.log(flight);
 					e.target.parentElement.parentElement.parentElement.reset();
 					isSingleRow = false;
 					getFlights();
