@@ -27,12 +27,12 @@ public class FlightController {
 	@Autowired
 	FlightService serv;
 
-	@RequestMapping("/")
-	public ModelAndView home() {
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("indexStatic.html");
-		return modelAndView;
-	}
+//	@RequestMapping("/")
+//	public ModelAndView home() {
+//		ModelAndView modelAndView = new ModelAndView();
+//		modelAndView.setViewName("indexStatic.html");
+//		return modelAndView;
+//	}
 
 	@GetMapping("api/flights")
 	public List<Flight> findAllFlights(HttpServletResponse res) {

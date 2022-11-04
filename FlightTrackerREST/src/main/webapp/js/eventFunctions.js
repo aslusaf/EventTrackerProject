@@ -53,7 +53,7 @@ function buildNavBar() {
 
 	let homeIconAnchor = document.createElement("a");
 	homeIconAnchor.className = "navbar-brand";
-	homeIconAnchor.href = "./";
+	homeIconAnchor.href = "https://austin-lambert.com/FlightTrackerREST/indexStatic.html";
 
 	let homeIcon = document.createElement("img");
 	homeIcon.className = "d-inline-block align-text-top";
